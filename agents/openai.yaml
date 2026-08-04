@@ -1,0 +1,4 @@
+interface:
+  display_name: "Z AI Skill Developer"
+  short_description: "Create and improve reusable cross-platform AI skills"
+  default_prompt: "Use $z-ai-skill-developer to create or improve this AI skill and validate it for the target platforms."

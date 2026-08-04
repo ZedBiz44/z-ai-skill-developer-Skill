@@ -1,0 +1,4 @@
+interface:
+  display_name: "Z SOP Framework"
+  short_description: "Create and review clear evergreen ZedBiz SOPs"
+  default_prompt: "Use $z-sop-framework to create or review this SOP using the ZedBiz SOP Framework."
