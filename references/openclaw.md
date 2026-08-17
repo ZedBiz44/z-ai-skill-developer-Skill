@@ -14,8 +14,10 @@ Use this reference when creating, updating, testing, or publishing an OpenClaw s
 
 - Inspect the current OpenClaw skills roots and loading precedence before deployment.
 - Workspace skills commonly live under `~/.openclaw/workspace/skills/`.
+- Install the generated `dist/<skill-name>/` package, not the authoring repository root, when the repository contains operational records or auxiliary files.
 - Verify discovery with `openclaw skills list`.
 - Test in a new session or restart the gateway when the current session has cached skill metadata.
+- Record the source commit, generated package path, target installation path, discovery result, and pilot result in the pilot-test record.
 
 ## Skill Workshop
 

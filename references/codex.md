@@ -8,7 +8,8 @@ Use this reference when creating or packaging a skill for Codex.
 - Keep the folder name identical to the skill name.
 - Include `agents/openai.yaml` for UI-facing metadata.
 - Use `scripts/`, `references/`, and `assets/` only when they directly support execution.
-- Do not add auxiliary files such as README, quick-reference, installation, or changelog files inside the distributable skill folder.
+- Do not add auxiliary files such as README, quick-reference, installation, activity-log, tracking, or changelog files inside the distributable skill folder.
+- Keep those files in the authoring repository and generate a minimal `dist/<skill-name>/` package as described in [packaging.md](packaging.md).
 
 ## Interface Metadata
 
@@ -24,7 +25,7 @@ In `agents/openai.yaml`:
 
 - Initialize new skills with the installed Skill Creator's `scripts/init_skill.py`.
 - Regenerate `agents/openai.yaml` when it no longer matches `SKILL.md`.
-- Run the installed Skill Creator's `scripts/quick_validate.py` against the skill folder.
+- Run the installed Skill Creator's `scripts/quick_validate.py` or the organization validator against the generated `dist/<skill-name>/` folder.
 - Start a fresh Codex session when validating discovery and triggering.
 
 ## Source of Truth
