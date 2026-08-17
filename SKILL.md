@@ -73,7 +73,7 @@ For SOP-derived skills, read the [SOP conversion framework](references/sop-frame
 
 ### Validate, Test, and Pilot
 
-- Build the current deployable package and run `python scripts/validate_skill.py dist/<skill-name>`.
+- Run `bash scripts/build_package.sh` to build the current deployable package, then run `python3 scripts/validate_skill.py dist/<skill-name>`.
 - Run the official validator supplied by each target platform when available.
 - Test positive, paraphrased-positive, boundary, and negative prompts in a fresh session.
 - Execute bundled scripts with representative safe inputs.

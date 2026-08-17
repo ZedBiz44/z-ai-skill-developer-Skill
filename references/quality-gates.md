@@ -30,6 +30,7 @@
 
 ## Test Gate
 
+- A zero-argument `bash scripts/build_package.sh` completes successfully from a clean generated-package state.
 - Structural validator passes against the generated deployable package.
 - Target-platform validator passes when available.
 - Clear positive triggers pass.

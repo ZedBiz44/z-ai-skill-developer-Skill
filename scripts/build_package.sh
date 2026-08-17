@@ -24,7 +24,12 @@ if [[ -d "$root_dir/agents" ]]; then
   cp -a "$root_dir/agents" "$package_dir/agents"
 fi
 
-for resource in "$@"; do
+resources=("$@")
+if [[ ${#resources[@]} -eq 0 ]]; then
+  resources=(assets references scripts)
+fi
+
+for resource in "${resources[@]}"; do
   case "$resource" in
     assets|references|scripts)
       if [[ -d "$root_dir/$resource" ]]; then

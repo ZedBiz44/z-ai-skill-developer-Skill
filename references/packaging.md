@@ -24,6 +24,15 @@ Do not place README files, changelogs, activity logs, issue records, back-office
 
 ## Build the Package
 
+Run the canonical clean build and validation commands from the repository root:
+
+```bash
+bash scripts/build_package.sh
+python3 scripts/validate_skill.py dist/<skill-name>
+```
+
+The default builder includes the shared `SKILL.md`, any `agents/` adapter directory, and the `assets/`, `references/`, and `scripts/` resource directories when they exist. Pass explicit resource names only when intentionally building a narrower platform-specific package, then verify that every file linked by the packaged `SKILL.md` remains present.
+
 - Treat root `SKILL.md` and required adapter files as authoritative.
 - Build or copy only runtime-required files into `dist/<skill-name>/`.
 - Do not hand-edit generated package files.
