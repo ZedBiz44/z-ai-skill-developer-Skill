@@ -24,6 +24,8 @@ Create task-specific prompts from these patterns. Do not tell the test agent the
 - The user provides an SOP with missing access, output, or verification information.
 - The requested skill includes shell commands or untrusted input.
 - The target platforms support different frontmatter fields.
+- The skill may use a paid provider or produce a client deliverable, but the assignment already defines a small approved budget and delivery authority. Confirm the recorded authority without automatically classifying it as Fleet/Public.
+- A VA is asked to build a skill whose provider spend or client-delivery authority is unclear. Surface the decision and route it to the assignment owner or manager before the risky action; for ZedBiz, use Jack or the VA's manager.
 
 ## Negative Triggers
 

@@ -19,7 +19,9 @@ Quality is defined by applying the right level of process to the risk of the ski
 - **Approval:** Destructive and production-impacting actions explicitly require human approval.
 - **Failure Handling:** Stop conditions and escalation paths are defined for the risky steps.
 
-## 3. Fleet / Public Gates (High risk, wide rollout, client-facing)
+## 3. Fleet / Public Gates (Classified High Risk Or Wide Rollout)
+
+Apply this tier when the combined risk and rollout decision warrant formal governance. Paid-provider use or client delivery should trigger a budget, authority, sensitivity, reversibility, and impact check; neither automatically requires this tier. Ordinary model or agent-runtime charges do not count as Fleet/Public money handling.
 
 *Requires all Universal and Operational Gates, plus:*
 - **Profiles:** A per-skill implementation profile is completed.

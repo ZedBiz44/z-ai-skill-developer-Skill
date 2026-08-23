@@ -16,8 +16,16 @@ Classify the skill and apply only the required process. **Lean is the default.**
    - Do not use profiles, adapters, or `dist/` packaging.
 2. **Operational:** For skills that write files, run local commands, or call safe APIs.
    - Requires: Lean baseline + specific pitfalls, failure stops, and targeted safety boundaries for the risky step.
-3. **Fleet / Public:** For skills handling private data, credentials, destructive actions, money, client delivery, or organization-wide rollout.
+3. **Fleet / Public:** For skills whose combined risk or rollout scope warrants formal governance, such as high-impact access to private data or credentials, destructive authority, public publication, regulated work, or organization-wide rollout.
    - Requires: Implementation profile, security/rollback review, full trigger matrix, pilot records, and `dist/` packaging.
+
+## Money And Client Delivery Check
+
+- Ordinary model, token, and agent-runtime charges incurred by processing a request do not automatically make a skill Fleet/Public.
+- Treat potentially escalating provider spend and client delivery as review signals, not automatic classifications. Confirm expected total spend, existing budget authority, delivery authority, sensitivity, reversibility, recurrence, and likely impact with the requester or project owner.
+- If the assignment already provides a clear budget and delivery authorization, record and follow it without repeatedly stopping for the same decision.
+- A VA should confirm with the assignment owner or the VA's manager whether Operational controls are sufficient or Fleet/Public governance is warranted when the assignment does not already establish that decision. For ZedBiz work, route that decision to Jack or the VA's manager.
+- When authority remains unresolved, stop before the unapproved material spend or client delivery. Continue safe preparation that does not cross that boundary.
 
 ## Core Workflow
 

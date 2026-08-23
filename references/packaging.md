@@ -12,6 +12,8 @@ For simple skills or internal deployments (e.g., Ruby/Hermes), **the repository 
 ### Fleet / Public / Cross-Platform Skills
 For skills requiring wide rollout, public distribution, or multiple platform adapters, use a two-layer structure. The repository is the source of truth; the deployable package contains only runtime files.
 
+Do not require this packaging merely because an assignment consumes ordinary model credits, uses a paid provider within established authority, or produces a client deliverable. Apply it when the agreed risk classification, repository contents, or target platform makes a separate deployment artifact useful.
+
 ```plain text
 repository-root/
   SKILL.md
