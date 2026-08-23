@@ -1,45 +1,32 @@
 # SOP-to-Skill Framework
 
-Use this reference when creating or reviewing an SOP, converting an SOP into a skill, or checking whether an operational procedure contains enough information to automate safely.
+Use this reference when converting an SOP into a skill. 
 
-## Required Operating Information
+**Crucial Rule:** Do not force every SOP detail into the executable skill. The skill provides the "go east and check the map" principles. The detailed SOP remains in Notion for human reference or advanced escalation.
 
-Capture:
+## Information Categories (Thinking Checklist)
 
-- **Who:** stable responsible roles; use individual names only when the identity itself is essential.
+Consider these categories when analyzing an SOP, but **only extract the non-obvious guidance the agent needs at runtime**. Do not create mandatory sections for all of these in the skill.
+
+- **Who:** stable responsible roles.
 - **What:** objective, expected output, and successful outcome.
-- **When:** trigger, schedule, frequency, event, and timezone when relevant.
-- **Where:** exact tools, accounts, repositories, servers, paths, databases, websites, and environments needed for execution.
-- **Why:** current business or operational reason and the risk prevented.
-- **Scope:** included work, excluded work, and systems that must not change.
-- **Source of truth:** authoritative technical and operational locations.
-- **Inputs and access:** permissions, prerequisites, secure credential references, data, and files.
-- **Outputs:** deliverable, format, storage location, and recipient.
+- **When:** trigger, schedule, frequency.
+- **Where:** exact tools, accounts, paths, and environments.
+- **Why:** current business reason and risk prevented.
+- **Scope:** included work, excluded work.
+- **Inputs and access:** permissions, prerequisites, data.
+- **Outputs:** deliverable, format, storage location.
 - **Procedure:** actions in execution order with real decision points.
-- **Responsibilities:** human and AI labels only where duties differ.
-- **Failure and escalation:** retry limits, stop conditions, rollback, and approver.
-- **Verification:** observable evidence proving the objective was achieved.
-- **Completion record:** evidence to save, where to save it, and who receives the result.
+- **Failure and escalation:** retry limits, stop conditions.
+- **Verification:** observable evidence proving success.
 
 ## Conversion Rules
 
-- Preserve organization-specific systems and paths when they are required to execute the procedure.
-- Replace incidental individual names with stable roles.
-- Remove historic incidents, temporary status, completed migration progress, and chat-history wording unless they explain a current restriction.
-- Move changing inventories and project status to tracking records.
-- Separate universal method from the adopting organization's implementation profile.
-- Convert repeated deterministic actions to scripts only when automation reduces error or repetition.
+- **Extract, don't copy:** Extract only what a capable agent would get wrong without the skill.
+- Preserve organization-specific systems and paths when required.
+- Remove historic incidents, temporary status, and chat-history wording.
 - Keep secrets out of both the SOP and the skill.
 
 ## Source-of-Truth Rule
 
-Store executable skill files in version control. Store operational explanations, approvals, and summaries in the organization's documentation system. Link operational documentation directly to the authoritative skill file instead of copying its contents.
-
-## Verification Questions
-
-- Can a qualified person or AI agent execute the procedure without guessing?
-- Are the exact systems and environments identified?
-- Are approval gates and stop conditions explicit?
-- Does the skill preserve the SOP's real business purpose?
-- Is changing status kept outside the evergreen procedure?
-- Is the final evidence sufficient to prove success?
+Store executable skill files in version control. Store operational explanations, approvals, and summaries in the organization's documentation system (e.g., Notion). Link operational documentation directly to the authoritative skill file instead of copying its contents.

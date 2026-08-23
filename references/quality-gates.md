@@ -1,51 +1,29 @@
-# Skill Quality Gates
+# Skill Quality Gates (Proportional)
 
-## Authoring Gate
+Quality is defined by applying the right level of process to the risk of the skill. **Do not apply Fleet/Public gates to Lean skills.**
 
-- Purpose, users, target platforms, triggers, inputs, outputs, and ownership are clear.
-- Existing overlapping skills were checked.
-- Skill versus plugin, tool, service, hook, or automation was decided.
-- The organization profile identifies the source of truth and approval process.
-- A per-skill implementation profile identifies the owner, identifier, platforms, pilot, approval, and completion evidence.
+## 1. Universal Gates (All Skills)
 
-## Structure Gate
+- **Purpose:** The primary job, triggers, and ownership are clear.
+- **Overlap:** Existing skills were checked to prevent duplication.
+- **Form:** Folder and `name` match. Shared frontmatter contains only `name` and `description`.
+- **Length:** `SKILL.md` targets 80-150 lines and strictly does not exceed 500 lines.
+- **Safety:** No secrets or complete environment files are present.
+- **Source of Truth:** One authoritative copy exists in GitHub. No competing executable copies exist in Notion.
+- **Verification:** The skill works for its primary intended use case on the target platform.
 
-- Folder and `name` match in the deployable package.
-- Shared frontmatter contains only `name` and `description`.
-- Description explains what the skill does and when to use it.
-- `SKILL.md` is under 500 lines and contains no TODO placeholders.
-- Detailed material is routed to directly linked resources.
-- The authoring repository and deployable package are separated when the repository contains operational records or auxiliary documentation.
-- The deployable package contains only runtime-required files.
-- No competing copy of the authoritative skill exists in operational documentation.
+## 2. Operational Gates (Skills running commands, writing files, calling APIs)
 
-## Safety Gate
+*Requires all Universal Gates, plus:*
+- **Boundaries:** Code execution, external content, and untrusted input were reviewed.
+- **Approval:** Destructive and production-impacting actions explicitly require human approval.
+- **Failure Handling:** Stop conditions and escalation paths are defined for the risky steps.
 
-- No secrets or complete environment files are present.
-- Third-party source and license are recorded.
-- Code execution, external content, transfers, and untrusted input were reviewed.
-- Destructive and production-impacting actions require approval.
-- The completed security and rollback review identifies source boundaries, execution boundaries, last known-good artifact, rollback owner, and removal procedure.
-- Failure, escalation, and rollback conditions are explicit.
+## 3. Fleet / Public Gates (High risk, wide rollout, client-facing)
 
-## Test Gate
-
-- A zero-argument `bash scripts/build_package.sh` completes successfully from a clean generated-package state.
-- Structural validator passes against the generated deployable package.
-- Target-platform validator passes when available.
-- Clear positive triggers pass.
-- Paraphrased positive triggers pass.
-- Boundary and negative triggers do not activate incorrectly.
-- Referenced files exist.
-- Bundled scripts execute successfully.
-- Discovery and behavior pass in a fresh session using the current commit or release.
-- The pilot and trigger-test record captures prompts, expected behavior, actual results, evidence, and rollback readiness.
-
-## Publication Gate
-
-- Human or organizational approval is recorded when required.
-- The tested deployable package matches the committed source version.
-- The release or commit is identifiable.
-- Pilot deployment succeeds before broader rollout.
-- Operational documentation links to the authoritative `SKILL.md`.
-- Completion evidence is stored in the designated tracking systems.
+*Requires all Universal and Operational Gates, plus:*
+- **Profiles:** A per-skill implementation profile is completed.
+- **Security:** A formal security and rollback review is completed and approved.
+- **Packaging:** The authoring repository and deployable `dist/` package are separated.
+- **Testing Matrix:** Positive, paraphrased, boundary, and negative triggers are explicitly tested in a fresh session.
+- **Pilot:** A pilot and trigger-test record captures the expected behavior, actual results, and rollback readiness before wider rollout.
