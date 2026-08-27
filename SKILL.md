@@ -39,7 +39,7 @@ Classify the skill and apply only the required process. **Lean is the default.**
 ### 2. Define the Skill Contract
 
 - **Keep it minimal:** A skill needs only: when to use, numbered steps, pitfalls, and verification.
-- **Repository README is required:** Every skill repository must maintain a root `README.md` that gives a human reader the skill’s purpose, appropriate and inappropriate triggers, the authoritative `SKILL.md`, the main runtime files, validation or deployment method, and material safety or approval boundaries. Keep it accurate to the repository and concise enough to scan.
+- **Repository README is required:** Every skill repository must maintain a root `README.md` that gives a human reader the skill’s purpose, appropriate and inappropriate triggers, the authoritative `SKILL.md`, the main runtime files, validation or deployment method, and material safety or approval boundaries. Keep it accurate to the repository and concise enough to scan. Keep the README in the authoring repository unless a target platform specifically requires it in the deployed package.
 - **Do not stuff SOPs:** When converting an SOP, extract only the non-obvious guidance the agent needs at runtime. The detailed SOP remains in Notion.
 
 ### 3. Design and Structure

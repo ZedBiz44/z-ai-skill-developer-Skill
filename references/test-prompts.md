@@ -5,6 +5,7 @@ Create task-specific prompts from these patterns. Do not tell the test agent the
 ## Positive Triggers
 
 - Create a reusable skill from this workflow.
+- Create a reusable Skill repository from this workflow and prepare it for validation.
 - Turn this SOP into a skill for the named platform.
 - Update this existing skill to support a new workflow.
 - Audit this skill for structure, security, and triggering problems.
@@ -41,5 +42,6 @@ Create task-specific prompts from these patterns. Do not tell the test agent the
 - Whether the skill activated
 - Files or output produced
 - Validation result
+- README presence, required subjects, and repository validation result
 - Incorrect activation or missed trigger
 - Changes required before publication

@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Validate the shared cross-platform structure of an Agent Skill."""
 
 from __future__ import annotations
@@ -10,6 +9,14 @@ from pathlib import Path
 
 NAME_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 LINK_RE = re.compile(r"\[[^\]]+\]\(([^)]+)\)")
+README_SUBJECTS = {
+    "purpose": ("this repository", "skill"),
+    "appropriate-use guidance": ("when to use",),
+    "inappropriate-use guidance": ("do not use",),
+    "SKILL.md authority": ("skill.md", "authoritative"),
+    "validation or deployment guidance": ("validate",),
+    "safety or approval boundary": ("secret", "approval"),
+}
 
 
 def fail(message: str, errors: list[str]) -> None:
@@ -41,6 +48,24 @@ def parse_frontmatter(text: str, errors: list[str]) -> tuple[dict[str, str], str
             fail(f"Frontmatter key and value are required: {line}", errors)
         values[key] = value
     return values, "\n".join(lines[end + 1 :])
+
+
+def validate_readme(readme_file: Path, errors: list[str]) -> None:
+    if not readme_file.is_file():
+        fail("README.md is required at the repository root.", errors)
+        return
+
+    readme = readme_file.read_text(encoding="utf-8").strip()
+    readme_lower = readme.lower()
+    if not readme.startswith("# "):
+        fail("README.md must begin with one H1 heading.", errors)
+    if len(readme) < 200:
+        fail("README.md is too short to document the skill responsibly.", errors)
+    if readme.count("\n## ") < 3:
+        fail("README.md must contain at least three H2 sections.", errors)
+    for subject, keywords in README_SUBJECTS.items():
+        if not all(keyword in readme_lower for keyword in keywords):
+            fail(f"README.md is missing required {subject}.", errors)
 
 
 def main() -> int:
@@ -91,19 +116,7 @@ def main() -> int:
         fail("SKILL.md must stay under 500 lines.", errors)
 
     if repository_mode:
-        readme_file = root / "README.md"
-        if not readme_file.is_file():
-            fail("README.md is required at the repository root.", errors)
-        else:
-            readme = readme_file.read_text(encoding="utf-8").strip()
-            if not readme.startswith("# "):
-                fail("README.md must begin with one H1 heading.", errors)
-            if len(readme) < 200:
-                fail("README.md is too short to document the skill responsibly.", errors)
-            if readme.count("\n## ") < 3:
-                fail("README.md must contain at least three H2 sections.", errors)
-            if "SKILL.md" not in readme:
-                fail("README.md must identify SKILL.md as the authoritative runtime guide.", errors)
+        validate_readme(root / "README.md", errors)
 
     for target in LINK_RE.findall(body):
         if "://" in target or target.startswith("#"):

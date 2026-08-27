@@ -1,0 +1,6 @@
+# Directories intentionally included in the z-ai-skill-developer runtime package.
+# One approved directory per line. Keep this list minimal and review every addition.
+agents
+references
+assets
+scripts
