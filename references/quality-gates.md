@@ -6,7 +6,7 @@ Quality means applying the right level of process to the risk of the skill. Do n
 - **Overlap:** Existing skills were checked to prevent duplication.
 - **Form:** Folder and `name` match. Shared frontmatter contains only `name` and `description`.
 - **Length:** `SKILL.md` targets 80–150 lines and never exceeds 500 lines.
-- **README:** The authoring repository contains a clear root `README.md` with purpose, use and do-not-use guidance, `SKILL.md` authority, validation/deployment guidance, and safety/approval boundaries. Run `python3 scripts/validate_skill.py --repository .`.
+- **README:** The authoring repository contains a clear root `README.md` with purpose, use and do-not-use guidance, `SKILL.md` authority, validation/deployment guidance, and safety/approval boundaries. Use the validator bundled with `z-ai-skill-developer`; do not assume the target repository has its own copy.
 - **Safety:** No secrets or complete environment files are present.
 - **Source of Truth:** One authoritative copy exists in GitHub. No competing executable copies exist in Notion.
 - **Verification:** The skill works for its primary intended use case on the target platform.

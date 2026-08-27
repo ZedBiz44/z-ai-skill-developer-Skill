@@ -40,6 +40,7 @@ Classify the skill and apply only the required process. **Lean is the default.**
 
 - **Keep it minimal:** A skill needs only: when to use, numbered steps, pitfalls, and verification.
 - **Repository README is required:** Every skill repository must maintain a root `README.md` that gives a human reader the skill’s purpose, appropriate and inappropriate triggers, the authoritative `SKILL.md`, the main runtime files, validation or deployment method, and material safety or approval boundaries. Keep it accurate to the repository and concise enough to scan. Keep the README in the authoring repository unless a target platform specifically requires it in the deployed package.
+- **Use the bundled validator:** Validate a completed Skill repository with the validator bundled with this developer Skill: `python3 <z-ai-skill-developer-root>/scripts/validate_skill.py --repository <target-repository>`. When validating this `z-ai-skill-developer` repository itself, use `python3 scripts/validate_skill.py --repository .`. Do not assume a newly created Skill repository contains the validator.
 - **Do not stuff SOPs:** When converting an SOP, extract only the non-obvious guidance the agent needs at runtime. The detailed SOP remains in Notion.
 
 ### 3. Design and Structure

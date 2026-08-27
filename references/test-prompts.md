@@ -42,6 +42,6 @@ Create task-specific prompts from these patterns. Do not tell the test agent the
 - Whether the skill activated
 - Files or output produced
 - Validation result
-- README presence, required subjects, and repository validation result
+- README presence, required subjects, correct bundled-validator selection, and repository validation result
 - Incorrect activation or missed trigger
 - Changes required before publication
