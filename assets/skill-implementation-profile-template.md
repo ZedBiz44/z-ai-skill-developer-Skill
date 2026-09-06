@@ -2,7 +2,7 @@
 
 Date: YYYY-MM-DD | Prepared by: [agent or person] | Status: Draft | Approved | Superseded
 
-Complete this profile before a ZedBiz-owned or materially customized skill is deployed beyond its pilot.
+Complete this profile for a Top Level Skill before it is installed beyond the first test agent. It is optional for Lean and Operational skills unless Jack or the assignment requires it.
 
 ## Identity and Ownership
 
@@ -36,7 +36,7 @@ Complete this profile before a ZedBiz-owned or materially customized skill is de
 
 - Default operating mode:
 - Human approver:
-- Pilot agent or environment:
+- First test agent or environment:
 - Wider rollout rule:
 - Stop and escalation conditions:
 - Retry limit:
@@ -55,7 +55,7 @@ Complete this profile before a ZedBiz-owned or materially customized skill is de
 - Structural validator result:
 - Platform validator result:
 - Trigger-test record:
-- Pilot result:
+- First-agent result:
 - Deployed commit or release:
 - GitHub issue or change record:
 - Notion operational summary:

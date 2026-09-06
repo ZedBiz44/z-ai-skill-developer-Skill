@@ -8,7 +8,14 @@ Use this reference when creating, updating, testing, or publishing an OpenClaw s
 - Align the directory name and frontmatter name.
 - Keep the description to one line and under 160 characters.
 - Use only `name` and `description` in the shared cross-platform core.
-- Add OpenClaw-only frontmatter such as command dispatch, gating, or homepage fields only to an intentionally OpenClaw-specific package.
+- Add OpenClaw-only frontmatter only to an intentionally OpenClaw-specific package. OpenClaw 2026.8.2 supports `metadata`, `homepage`, `license`, `allowed-tools`, `user-invocable`, `disable-model-invocation`, `command-dispatch`, `command-tool`, and `command-arg-mode` in addition to `name` and `description`.
+
+## Built-In Skill Creator
+
+- Z AI Skill Developer manages scope, risk level, safety, GitHub ownership, approval, and rollout.
+- Use OpenClaw's built-in Skill Creator to help design, repair, validate, and optionally package the OpenClaw files.
+- Inspect the Skill Creator actually loaded by the target OpenClaw version. For the VPS1 OpenClaw 2026.8.2 image reviewed on 2026-09-06, the live copy is `/app/skills/skill-creator`.
+- Do not treat an older saved runtime folder as the live source.
 
 ## Placement and Discovery
 
@@ -17,7 +24,7 @@ Use this reference when creating, updating, testing, or publishing an OpenClaw s
 - Install the generated `dist/<skill-name>/` package, not the authoring repository root, when the repository contains operational records or auxiliary files.
 - Verify discovery with `openclaw skills list`.
 - Test in a new session or restart the gateway when the current session has cached skill metadata.
-- Record the source commit, generated package path, target installation path, discovery result, and pilot result in the pilot-test record.
+- Record the source commit, generated package path, target installation path, discovery result, and one-agent result.
 
 ## Skill Workshop
 
@@ -31,6 +38,8 @@ Use this reference when creating, updating, testing, or publishing an OpenClaw s
 ## Testing and Publication
 
 - Test locally with representative prompts before publishing.
+- Run `python3 <z-ai-skill-developer-root>/scripts/validate_skill.py --platform openclaw <skill-directory>` for an intentionally OpenClaw-specific package.
+- The release check must use a real YAML reader. Stop if the reader is unavailable; do not fall back to a line-by-line guess.
 - Confirm expected prompts trigger the skill and unrelated prompts do not.
 - Review shell commands and untrusted input for command-injection risk.
 - Use the current ClawHub publishing workflow only after ownership, version, source, and approval are confirmed.

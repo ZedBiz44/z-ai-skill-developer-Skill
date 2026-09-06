@@ -1,16 +1,12 @@
-## Proportional Packaging
+# Proportional Packaging
 
-Packaging depends on the skill's risk tier and target runtime.
+## Lean
 
-### Internal / Single-Platform Skills
+Lean skills do not need a special deployment package. A small repository folder may be installed directly when it contains only the files needed by the skill.
 
-For simple internal skills and direct single-platform installs, the repository folder can be the package. Keep the root small, readable, and limited to files needed for execution and documentation.
+## Operational and Top Level Skill
 
-Every Skill repository needs a human-readable root `README.md`. The README is part of the authoring repository. Do not copy it into a deployable package unless the target platform specifically requires it.
-
-### Fleet / Public / Cross-Platform Skills
-
-For wide rollout, public distribution, or multiple platform adapters, keep two clear layers:
+Build a clean `dist/<skill-name>/` package tied to the approved GitHub commit.
 
 ```plain text
 repository-root/
@@ -23,32 +19,27 @@ repository-root/
   scripts/
   dist/<skill-name>/
     SKILL.md
-    only the approved runtime folders from package-resources.txt
+    only the approved runtime folders
 ```
 
-The repository is the technical source of truth. The `dist/<skill-name>/` folder is the deployable copy. Do not require this structure just because normal model use has a cost or a client will receive the work. Use it when the agreed risk, rollout size, repository contents, or target platform makes a separate artifact useful.
+Keep the repository README, research notes, activity logs, change records, and other authoring files out of the installation package unless the target platform requires them at runtime.
 
-## Choose Package Contents
+## Build and Check
 
-`package-resources.txt` is the approved list of folders copied into the deployable package. Keep it minimal. Add a folder only when `SKILL.md` needs it at runtime or a documented validation step requires it.
+- List approved runtime folders in `package-resources.txt`.
+- Run `python3 scripts/validate_skill.py --repository .`.
+- Run `bash scripts/build_package.sh`.
+- Run `python3 scripts/validate_skill.py dist/<skill-name>`.
+- Run the target platform's current official validator.
+- Confirm the package contains only `SKILL.md` and the approved runtime folders.
 
-Do not ship research notes, activity logs, tracking documents, changelogs, or the repository README in the package by default.
+## Install and Verify
 
-## Build and Validate
+- Record the source commit and package checksum.
+- Install on one test agent first.
+- Verify discovery and one representative task.
+- Obtain the required approval before wider installation.
+- Install the exact tested package on the remaining approved targets.
+- Confirm every installed copy matches the approved GitHub commit or package checksum.
 
-When a deployable package is required, run:
-
-```bash
-python3 scripts/validate_skill.py --repository .
-bash scripts/build_package.sh
-python3 scripts/validate_skill.py dist/<skill-name>
-```
-
-The release test must also verify that the built package contains exactly `SKILL.md` and the folders listed in `package-resources.txt`.
-
-## Deploy and Verify
-
-- Install the approved package on the target environment.
-- Verify discovery in a fresh session.
-- Confirm the installed `SKILL.md` matches the approved Git commit or checksum.
-- For Fleet/Public work, do not expand rollout when the deployed package differs from the tested source commit.
+For Top Level Skills, also verify the documented rollback method before wider installation.

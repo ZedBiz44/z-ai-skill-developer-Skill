@@ -1,4 +1,4 @@
-# Skill Pilot and Trigger-Test Record
+# Skill Test and Rollout Record
 
 Date: YYYY-MM-DD | Tester: [agent or person] | Status: Planned | Passed | Failed | Partial
 
@@ -8,7 +8,7 @@ Date: YYYY-MM-DD | Tester: [agent or person] | Status: Planned | Passed | Failed
 - Repository and commit or release:
 - Deployable package path:
 - Platform and version:
-- Pilot agent or environment:
+- First test agent or environment:
 - Installation path:
 - Fresh session or restarted gateway confirmed:
 
@@ -29,7 +29,7 @@ Date: YYYY-MM-DD | Tester: [agent or person] | Status: Planned | Passed | Failed
 | Boundary | | Skill asks, routes, or limits scope correctly | | |
 | Negative | | Skill does not activate for an unrelated task | | |
 
-## Pilot Task
+## First-Agent Task
 
 - Representative safe task:
 - Output or files produced:
@@ -47,4 +47,4 @@ Date: YYYY-MM-DD | Tester: [agent or person] | Status: Planned | Passed | Failed
 - Tester:
 - Reviewer:
 - Approver:
-- Deployment decision: pilot only | wider rollout | rollback | blocked
+- Deployment decision: first agent only | wider rollout | rollback | stopped

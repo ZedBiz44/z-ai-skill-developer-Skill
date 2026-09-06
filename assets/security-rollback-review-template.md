@@ -2,7 +2,7 @@
 
 Date: YYYY-MM-DD | Reviewer: [agent or person] | Status: Draft | Approved | Blocked
 
-Complete this review before pilot deployment when a skill reads external content, runs commands, writes files, transfers data, accesses services, or affects a live environment.
+Complete this review for a Top Level Skill before testing or release. It is not automatically required for normal Operational work.
 
 ## Trust and Inputs
 
@@ -29,7 +29,7 @@ Complete this review before pilot deployment when a skill reads external content
 | Review point | Decision and evidence |
 |---|---|
 | Last known-good commit or release | |
-| Pilot installation location | |
+| First test installation location | |
 | Rollback owner | |
 | Verified replacement or removal procedure | |
 | Conditions that require immediate rollback | |

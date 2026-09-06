@@ -1,33 +1,44 @@
-Quality means applying the right level of process to the risk of the skill. Do not apply Fleet/Public gates to Lean skills.
+# Quality Gates by Risk Level
 
-## Universal Gates: Every Skill
+Apply only the requirements for the selected risk level.
 
-- **Purpose:** The primary job, triggers, and ownership are clear.
-- **Overlap:** Existing skills were checked to prevent duplication.
-- **Form:** Folder and `name` match. Shared frontmatter contains only `name` and `description`.
-- **Length:** `SKILL.md` targets 80–150 lines and never exceeds 500 lines.
-- **README:** The authoring repository contains a clear root `README.md` with purpose, use and do-not-use guidance, `SKILL.md` authority, validation/deployment guidance, and safety/approval boundaries. Use the validator bundled with `z-ai-skill-developer`; do not assume the target repository has its own copy.
-- **Safety:** No secrets or complete environment files are present.
-- **Source of Truth:** One authoritative copy exists in GitHub. No competing executable copies exist in Notion.
-- **Verification:** The skill works for its primary intended use case on the target platform.
+## Lean
 
-## Operational Gates: Skills Running Commands, Writing Files, or Calling APIs
+Use Lean for a simple skill that gives instructions but does not make important changes.
 
-Requires every Universal Gate, plus:
+- Keep one clear `SKILL.md`.
+- Run a basic validity check.
+- Run one real successful test.
+- Confirm the purpose, trigger, folder name, frontmatter, links, and source ownership are correct.
+- Confirm the skill contains no secrets.
 
-- **Boundaries:** Code execution, external content, and untrusted input were reviewed.
-- **Approval:** Destructive and production-impacting actions explicitly require human approval.
-- **Failure Handling:** Stop conditions and escalation paths are defined for the risky steps.
+Lean does not require formal security paperwork, a rollback plan, a special deployment package, or a full trigger matrix.
 
-## Fleet / Public Gates: High-Risk or Wide Rollout
+## Operational
 
-Apply this tier when the combined risk and rollout decision warrant formal governance. Paid-provider use or client delivery should trigger a budget, authority, sensitivity, reversibility, and impact check; neither automatically requires this tier. Ordinary model or agent-runtime charges do not count as Fleet/Public money handling.
+Use Operational when the skill can create or edit files, run approved commands, read from an API, or update an internal system within clear limits.
 
-Requires every Universal and Operational Gate, plus:
+Require everything from Lean, plus:
 
-- **Profiles:** A per-skill implementation profile is completed.
-- **Security:** A formal security and rollback review is completed and approved.
-- **Packaging:** The authoring repository and deployable `dist/` package are separated.
-- **Package contents:** The package contains only `SKILL.md` and the explicitly approved folders in `package-resources.txt`.
-- **Testing Matrix:** Positive, paraphrased, boundary, and negative triggers are explicitly tested in a fresh session.
-- **Pilot:** A pilot and trigger-test record captures the expected behavior, actual results, and rollback readiness before wider rollout.
+- State exactly which actions, commands, files, services, and data are allowed.
+- State when the agent must stop and who approves the next step.
+- Protect against damaging actions, unintended file changes, unsafe input, and secret exposure.
+- Build a clean installation package tied to the approved GitHub version.
+- Test the package with one agent first.
+- Obtain the required human approval before wider installation. Jack approves wider ZedBiz installation.
+
+Operational does not automatically require a full security review or formal rollback paperwork.
+
+## Top Level Skill
+
+Use Top Level Skill when the skill handles sensitive business data, changes production systems, can spend significant money, or will be distributed outside the organization.
+
+Require everything from Operational, plus:
+
+- Complete and approve the implementation profile.
+- Complete the full security review.
+- Record and verify the rollback plan and last working version.
+- Run deep multi-level testing, including positive, paraphrased, boundary, negative, failure, and rollback tests.
+- Record the one-agent test and wider-installation decision.
+
+Paid-provider use or client delivery is a review signal, not an automatic Top Level classification. Confirm the approved amount, authority, sensitivity, reversibility, recurrence, and likely impact. Ordinary model and agent-runtime charges do not count as significant spending.

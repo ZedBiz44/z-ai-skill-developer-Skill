@@ -4,7 +4,7 @@ This repository is the technical source of truth for `z-ai-skill-developer`. The
 
 ## When to Use This Skill
 
-Use this Skill to create a new skill, turn an approved workflow into a skill, repair an existing skill, or check a skill’s scope, structure, security, validation, or package.
+Use this Skill to create a new skill, turn an approved workflow into a skill, repair an existing skill, or check a skill's scope, structure, security, validation, or package. It manages the full process; OpenClaw's built-in Skill Creator supports the OpenClaw building and packaging steps.
 
 Do not use it to complete a one-time business task, install an unchanged finished skill, or build a plugin, MCP server, background service, or automation that needs more than a skill can provide.
 
@@ -32,11 +32,13 @@ python3 scripts/validate_skill.py dist/z-ai-skill-developer
 
 The first command validates the repository, including this README. The final command validates the deployable package. Test the installed package on the actual target runtime. Do not assume paths, discovery, credentials, or platform behavior.
 
+The validator requires a real YAML reader. It uses PyYAML when installed or the Node `yaml` package already supplied by the current OpenClaw runtime. It stops with a clear error when neither is available.
+
 The README stays in the authoring repository. It is not included in the deployable package unless a target platform specifically requires it.
 
 ## Safety and Approval Boundaries
 
-Keep secrets and private keys out of the repository and package. Obtain human approval before destructive, production, or public actions. Use the smallest governance process that fits the real risk.
+Keep secrets and private keys out of the repository and package. Obtain human approval before destructive, production, or public actions. Use the approved Lean, Operational, or Top Level Skill process that fits the real risk. Operational work does not automatically require full security and rollback paperwork.
 
 ## Keeping This Repository Healthy
 

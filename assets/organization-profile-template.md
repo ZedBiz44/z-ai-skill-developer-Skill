@@ -31,7 +31,7 @@ Complete this profile before creating or publishing organization-owned skills.
 
 - Default operating mode:
 - Human approval requirements:
-- Pilot environment or test agent:
+- First test environment or agent:
 - Production rollout rule:
 - Retry limit:
 - Stop and escalation conditions:
