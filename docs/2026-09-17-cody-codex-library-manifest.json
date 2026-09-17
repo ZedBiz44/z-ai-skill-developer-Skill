@@ -1,0 +1,723 @@
+[
+  {
+    "name": "z-ai-skill-developer",
+    "commit": "46b859e60beb4635ec237583c9bd7122dc6f1b5b",
+    "files": [
+      {
+        "path": "agents/openai.yaml",
+        "sha256": "311262fd97aadacda3cb258f949cce8eef61fd4bbb347f37e4532ee9e534c65a",
+        "git_blob": "3c51a5c330a8ce7c6f65d69bb0a93ba1b6df3314"
+      },
+      {
+        "path": "assets/organization-profile-template.md",
+        "sha256": "5618cf460ae9c7d82ada5d6df40ac0c41463d4a4d66d64d6dee68524f65f9b3c",
+        "git_blob": "f6c6e9134d1a7b7a38b8b4f106396a33fee1c196"
+      },
+      {
+        "path": "assets/pilot-test-record-template.md",
+        "sha256": "d5952190581507c9549160b17320f2a94cef9b502efe5f3abd0297965e7950c4",
+        "git_blob": "616d368f1cb371577055c23c38625355ac970581"
+      },
+      {
+        "path": "assets/security-rollback-review-template.md",
+        "sha256": "03ffa4bf161b78441f9d5341940bcc15f0f8df7f7a74c82b20dbc2025f195434",
+        "git_blob": "76b0f454124747a75713919e2e1311d28e955325"
+      },
+      {
+        "path": "assets/skill-implementation-profile-template.md",
+        "sha256": "871ea3eca30f446954ecb260293781cc9fd865d10ef8e30205b6c921c5a32556",
+        "git_blob": "77e985d05d6d3c171edbcb5ff6513a4d750b1e03"
+      },
+      {
+        "path": "references/codex.md",
+        "sha256": "18379b28ac41ce1456bacecfcccde9b05916cef78bd5d9ac2acc1be6e77a5e28",
+        "git_blob": "39a1012fb9303fd032036d30701894c8c55dc93a"
+      },
+      {
+        "path": "references/hermes.md",
+        "sha256": "768209c9d2aa81b2f13df65ae5aaa8736dae15f70781b1e57aa413c1200d3ece",
+        "git_blob": "80085adad260e7093aa3a52ab2dffc6cc732937d"
+      },
+      {
+        "path": "references/naming.md",
+        "sha256": "1701ea4a4efff30f995ccce56815e8fb86601e5ed94df9fb1397446600e780d2",
+        "git_blob": "d53a2ec8dbe6fe7e61f2fbcd055d11e85b3b861e"
+      },
+      {
+        "path": "references/openclaw.md",
+        "sha256": "7c5f02ef2835cd89c46c14b7c20e5c896df259d4841ca1a7ac3c213556c99cd7",
+        "git_blob": "9fb74d1ae8623a1ac9c666f9fcb849e1dcf3238b"
+      },
+      {
+        "path": "references/packaging.md",
+        "sha256": "22ffe59209db726179dfd4599eade28295bedd055ff3460ba3910096599a37c7",
+        "git_blob": "5f178cec926a8333aaf2bbcdce16cfe326c66159"
+      },
+      {
+        "path": "references/quality-gates.md",
+        "sha256": "f193e95ff2cf6f9e93d9a79e93cab1aa071ddf40f13e0809d39285a11772da80",
+        "git_blob": "95b07f24c594715c499b91807e0dbba3dda7b57a"
+      },
+      {
+        "path": "references/security.md",
+        "sha256": "c4520c3b2c16eea0d72196571963a639fa9825311561df9cc471c61dbceb4eb2",
+        "git_blob": "c0ac1e7260ea02ca16252cbee9311d07c11c8bf4"
+      },
+      {
+        "path": "references/sop-framework.md",
+        "sha256": "a79e09f560567adb8d12ede84983818cce71a1a69e09c3114e0bb8eb92021141",
+        "git_blob": "3c98eb218a4cfa11782c128439d970e320bb74e1"
+      },
+      {
+        "path": "references/test-prompts.md",
+        "sha256": "ff7df767138dccb6107fc832f8d94f1e2bb3051be8a799dc99da3254dbcf1895",
+        "git_blob": "f7fa71a9534c2b8aa154b817bc182c5b441099fe"
+      },
+      {
+        "path": "scripts/build_package.sh",
+        "sha256": "c15ecfb6db2f469c9227d9d979b6ab01d38c58ec570fa2a72ef0d940391b93d2",
+        "git_blob": "e5a2db35fb9a80a41596ae6d61a7ad7ea4492548"
+      },
+      {
+        "path": "scripts/test_default_package_build.sh",
+        "sha256": "df955593d1be77a89c1debb9b996736b2f54d24e535b007af93a4a18d8f12a19",
+        "git_blob": "4dc11035293237fd0440d7080970268363c9068e"
+      },
+      {
+        "path": "scripts/test_yaml_validation.sh",
+        "sha256": "6f707d4e18564cd2745ecacf97acf11037a5d12bc067bfba6adc23ca6391942d",
+        "git_blob": "1ef42d7b5313d336b21bfc5bd06797dde189fdce"
+      },
+      {
+        "path": "scripts/validate_skill.py",
+        "sha256": "6faa74dad4bd09f93423fef7c3465cc458cdb6e94081708ff132d01d6f162df8",
+        "git_blob": "728090842956787ebc08a5898cf6cdd5ae6f5754"
+      },
+      {
+        "path": "SKILL.md",
+        "sha256": "5c3620a196db4e57e3f0fbd9515293ebed1f39c4072ff23e13d23d571acc402e",
+        "git_blob": "062f3ce93f0cc7904dce06ba1f32b643251f5c45"
+      }
+    ],
+    "installed_path": "D:\\Google Drive\\Documents\\Codex-Projects\\.codex\\skills\\z-ai-skill-developer",
+    "package_sha256": "3925961f13e8a6ccc2d644f5ad4617355602310afdabc01e3b3b08ebe95cbe05"
+  },
+  {
+    "name": "z-agent-communication",
+    "commit": "a4ad70f072a28cfa1457b52c66d9826fa1275efb",
+    "files": [
+      {
+        "path": "agents/openai.yaml",
+        "sha256": "343dbc2e6c293e543a55deb597fd96c5f9a97c3dbc640ade43416f11f5f2fa38",
+        "git_blob": "66715b699d955df2ce361467a1b71398ba4c2726"
+      },
+      {
+        "path": "SKILL.md",
+        "sha256": "96b7f08aee54fde4df924ce65b4947b8ec2748f08301326b3f42fa3247c59d91",
+        "git_blob": "646a2b24f35850f643444180a24aff234f6d6cd5"
+      }
+    ],
+    "installed_path": "D:\\Google Drive\\Documents\\Codex-Projects\\.codex\\skills\\z-agent-communication",
+    "package_sha256": "2916ed2ce5a1a1dd40c1a393e1167c7dbc1c415e8f9527d5e82e32e0c83ec3ee"
+  },
+  {
+    "name": "z-sop-framework",
+    "commit": "0113b1932fcd495fe4b07a93a9dcd70b1629dc49",
+    "files": [
+      {
+        "path": "agents/openai.yaml",
+        "sha256": "09584eb5c68d61f76e1bba8123840166d6f4d58f19e3c0021521e71804095fa5",
+        "git_blob": "9badf9ed34e4df5f4ddc0ca2c9452528ef51eaf6"
+      },
+      {
+        "path": "scripts/build_package.sh",
+        "sha256": "80a57db19faefa8368cfdf624039a19618f8fd9241a5183f14651e7bb33757d9",
+        "git_blob": "4a92cf2276e066d5a31ceb062859f118edc8880a"
+      },
+      {
+        "path": "scripts/test_default_package_build.sh",
+        "sha256": "9c71e3572f773754656534d9bb0b33f79a2d09e67cfd66a7efde34e12e129f65",
+        "git_blob": "95f541f9f2cf6e6c5743c3e4e904a22cde48cdfa"
+      },
+      {
+        "path": "scripts/validate_skill.py",
+        "sha256": "20e8ecccc5bcb3a341879d734aa7e3c5c646a94f46e3eed7494cb3d9b4ace872",
+        "git_blob": "4444b4e4114bcc4f5b2a12ab21146587c23360b1"
+      },
+      {
+        "path": "SKILL.md",
+        "sha256": "577c90b899856bd8f3db69dda6bbc3ae976778160d7631e9ab8ee1e044597348",
+        "git_blob": "d77b6f203065a978a49823f6c6a0e36f15ec8f49"
+      }
+    ],
+    "installed_path": "D:\\Google Drive\\Documents\\Codex-Projects\\.codex\\skills\\z-sop-framework",
+    "package_sha256": "ffce2d8617b17d9eec6b3768a388949cca2acb4c27278af41689460abed97f38"
+  },
+  {
+    "name": "z-openclaw-agents-md-manager",
+    "commit": "cd26f9eb9ed2e8bfb4eb4dccc512b1eaee5e19ba",
+    "files": [
+      {
+        "path": "agents/openai.yaml",
+        "sha256": "ec2a75636ae53b7b6f280b4d0fce7b7b714213434b274c3767291b636f696eb7",
+        "git_blob": "3998016515b34ed59ef33fbc2c687bef19dd1701"
+      },
+      {
+        "path": "assets/assessment-report.md",
+        "sha256": "7637b5f4af2e4583d74fd2a65ca9fffd1e4b863a1acc183dec20f37cd1cb3bcd",
+        "git_blob": "50ba52f17a52289fc2c0cc41a6925e86c4cc0037"
+      },
+      {
+        "path": "assets/instruction-preservation-register.md",
+        "sha256": "5cbc594a4931526415389de034df9320ed18ac1fc9ac6edb9634206b428dadb5",
+        "git_blob": "807ed08fbf12e500218936b5cacc66b81e9d36b7"
+      },
+      {
+        "path": "references/agents-md-standard.md",
+        "sha256": "e17b5ca67d7e61b612da9871514c8daa9c557000a8255508a751f193f40f1f8a",
+        "git_blob": "c65951b61d351a0e3eb70f097de65c5f9e633fd2"
+      },
+      {
+        "path": "references/audit-and-deployment.md",
+        "sha256": "6da6c88713b9e2d1e49ff36925f713681ea7096c76d01bca3d4bef3c14d72467",
+        "git_blob": "05059a520e6dc20fee10d5f6a7f4ec2348faec68"
+      },
+      {
+        "path": "references/implementation-profile.md",
+        "sha256": "837192d0886888c3908c25b0602fa7764fba0a2e1d72241fae21312d93155435",
+        "git_blob": "7ecbf23622f28609c94adfc956485451eb20660b"
+      },
+      {
+        "path": "scripts/analyze_agents_md.py",
+        "sha256": "5893916d31c07566ee9adee396bcb438d3a49a7f5212ee4a580ac88010bc2201",
+        "git_blob": "f9538267726f242806a1d04ddaa923c3659140be"
+      },
+      {
+        "path": "SKILL.md",
+        "sha256": "160314319a627e495a4080e47551ae087e709dbdc3ae1291c89ed93ed3d73515",
+        "git_blob": "9d5615de4f5d2e083f2fd4f96984d009fd688c66"
+      }
+    ],
+    "installed_path": "D:\\Google Drive\\Documents\\Codex-Projects\\.codex\\skills\\z-openclaw-agents-md-manager",
+    "package_sha256": "97d8366f9777aaecb81b3e338878c71eed18d385bda28aa8e42df327bf9977d8"
+  },
+  {
+    "name": "z-knowledge-routing",
+    "commit": "9506fea7ff63027a65d2b6d381122bdeec584fbf",
+    "files": [
+      {
+        "path": "agents/openai.yaml",
+        "sha256": "b5241c63e4da7f1e75b78465e9a9e67d1dc65f67fd99eb5251c425f995ef1d86",
+        "git_blob": "9f96f35bad4161741d21478bf94e6d552f3d769b"
+      },
+      {
+        "path": "references/chatgpt-codex.md",
+        "sha256": "7a7e7e889fcdec5e36b02c4248e85078e4fb8e86a7bac861553725de3082cbc0",
+        "git_blob": "a542bdbb984381883573896dc2f57d469956672a"
+      },
+      {
+        "path": "scripts/build_package.sh",
+        "sha256": "80a57db19faefa8368cfdf624039a19618f8fd9241a5183f14651e7bb33757d9",
+        "git_blob": "4a92cf2276e066d5a31ceb062859f118edc8880a"
+      },
+      {
+        "path": "scripts/test_default_package_build.sh",
+        "sha256": "9c71e3572f773754656534d9bb0b33f79a2d09e67cfd66a7efde34e12e129f65",
+        "git_blob": "95f541f9f2cf6e6c5743c3e4e904a22cde48cdfa"
+      },
+      {
+        "path": "scripts/validate_skill.py",
+        "sha256": "20e8ecccc5bcb3a341879d734aa7e3c5c646a94f46e3eed7494cb3d9b4ace872",
+        "git_blob": "4444b4e4114bcc4f5b2a12ab21146587c23360b1"
+      },
+      {
+        "path": "SKILL.md",
+        "sha256": "fc54a1215389503e9252d0e6ac0e94a20ea1c9822ddfbb079e5125c64e62f89e",
+        "git_blob": "de58cc2a9fdc501cc0056baf612206431ce569b7"
+      }
+    ],
+    "installed_path": "D:\\Google Drive\\Documents\\Codex-Projects\\.codex\\skills\\z-knowledge-routing",
+    "package_sha256": "83d6a162691a027eda59480ab5f480b0dfc9f97d06e560c46d8d3cf9fc7b496d"
+  },
+  {
+    "name": "z-notion-knowledge-publish",
+    "commit": "f97f53054e4b1e7f25f307825de3f614c8a04c36",
+    "files": [
+      {
+        "path": "agents/openai.yaml",
+        "sha256": "ba77f69217c0c05e97323ddb0902352e4b9b107f203a08dfa089f788635e84d9",
+        "git_blob": "b6b4434db7bf3f02a4dd7bed6b9a77f3770116eb"
+      },
+      {
+        "path": "references/canonical-content-master-databases.md",
+        "sha256": "4eab3ba29e83734a4fb4f5690efce76ab6ccd1c1ebeba8b77ee46f356dd5a5fa",
+        "git_blob": "d1753b973f10751ecd7c0e7ca022b95367eb0d4e"
+      },
+      {
+        "path": "references/chatgpt-codex.md",
+        "sha256": "4537c09d753ace6637cdcbf4ecbee8f91716bd1d4807a246c05dc3033908b34f",
+        "git_blob": "b625a91e7278ddd3468530cf4f1fdd18534c4f72"
+      },
+      {
+        "path": "references/core-master-database-routing.md",
+        "sha256": "9c1fd35b6276b985b4b30454b3a405596fc334f42f45eb323da1d67b7e3c90b8",
+        "git_blob": "342f51980250753ae5394e07b90386089f216eeb"
+      },
+      {
+        "path": "references/core-operating-properties.md",
+        "sha256": "71e41ea3d6cd1a666b398b29d5db30c571201449749ad1e9de31800a68b267cb",
+        "git_blob": "468fa5f58d9971480d6e10b74e456218513387d1"
+      },
+      {
+        "path": "references/research-template-rules.md",
+        "sha256": "4113fa44b78b336bbead34d4e861b31076a1d81aa565db3c45365d29eee3a7ba",
+        "git_blob": "cf6afa6378e397d0d3163e593c53457be3a19ce5"
+      },
+      {
+        "path": "references/z-connections-linking-rules.md",
+        "sha256": "c1456a03f19308fe10a0cba7fe29c283f34022ff4e60e07b2bf394ad127e2d4b",
+        "git_blob": "2c4a9e404a00ac72b792650ec7498c42186ec80c"
+      },
+      {
+        "path": "references/z-knowledge-folder-map.md",
+        "sha256": "b3c5c85a4690bba14134ebd752c5059dff8cd3a442f047a800bca9103b021aaf",
+        "git_blob": "6f13659da9a067b4f0cc6b716426d2c364207f76"
+      },
+      {
+        "path": "scripts/build_package.sh",
+        "sha256": "80a57db19faefa8368cfdf624039a19618f8fd9241a5183f14651e7bb33757d9",
+        "git_blob": "4a92cf2276e066d5a31ceb062859f118edc8880a"
+      },
+      {
+        "path": "scripts/test_default_package_build.sh",
+        "sha256": "9c71e3572f773754656534d9bb0b33f79a2d09e67cfd66a7efde34e12e129f65",
+        "git_blob": "95f541f9f2cf6e6c5743c3e4e904a22cde48cdfa"
+      },
+      {
+        "path": "scripts/validate_skill.py",
+        "sha256": "20e8ecccc5bcb3a341879d734aa7e3c5c646a94f46e3eed7494cb3d9b4ace872",
+        "git_blob": "4444b4e4114bcc4f5b2a12ab21146587c23360b1"
+      },
+      {
+        "path": "SKILL.md",
+        "sha256": "cc23b0e2e1296315918c198ecff39a666a3dbef9f6ffb1d63d3305ff9fd896ed",
+        "git_blob": "a87041ab5f787e4d1f0c2266c23a220cbefdeb0f"
+      }
+    ],
+    "installed_path": "D:\\Google Drive\\Documents\\Codex-Projects\\.codex\\skills\\z-notion-knowledge-publish",
+    "package_sha256": "d386c33595afd686e7530402e145454ed10902e4430d8d9d8fd5f6e8b5304577"
+  },
+  {
+    "name": "z-files-folders",
+    "commit": "4b8ebe6a478c621d86429192a5465887d0d435ea",
+    "files": [
+      {
+        "path": "agents/openai.yaml",
+        "sha256": "7194556ff91be97e2866ce4ab227edf7593ca9931315189c47ed249ffa59be53",
+        "git_blob": "932f66c54dda2ee3a85caa4e5478db91c1b281b7"
+      },
+      {
+        "path": "assets/batch-log.csv",
+        "sha256": "7dfd1d5468829613ca5a8599f3267f4af2056ab9debc0028b2827da0a832366b",
+        "git_blob": "3ff005c8fd714e05dc72c93faf02694d7985b00c"
+      },
+      {
+        "path": "assets/completion-manifest.example.json",
+        "sha256": "5490287ed1a28ba095ba318e1f26c6139baacf4b117c2aff55e768316efcd4fa",
+        "git_blob": "7c4ea0ae9325535c44c34ed86601ec2aa79ec28c"
+      },
+      {
+        "path": "assets/prewrite-plan.example.json",
+        "sha256": "8119b554b5d2f2de8a744fba5bbc8d04c2befb9b6d0cfeae8750e97c52d476fc",
+        "git_blob": "9c85965698c84c66c509e3d4c8460ef2915db381"
+      },
+      {
+        "path": "scripts/build_package.py",
+        "sha256": "81d5abbe897f9e2377f06a042ddd09c969c7a17f93133cd5465e2797a26414a8",
+        "git_blob": "e5f5df45ee0c64b0ace2e1bc32c431f07523f098"
+      },
+      {
+        "path": "scripts/check_completion.py",
+        "sha256": "20812f89e026dd91c798223ed605f4ef9cf79550add91af2d665eb5a24a2f63f",
+        "git_blob": "2cbd332a50668e3ecf97aab564887b5fc47b0276"
+      },
+      {
+        "path": "scripts/check_inventory.py",
+        "sha256": "07b57c23bd5331fda100a7824b922418512fd44dff57042860ac57eab1948ea0",
+        "git_blob": "e5e71232d8e76e3732b8bd7152bdd3faf51afd0a"
+      },
+      {
+        "path": "SKILL.md",
+        "sha256": "5868b767dc9a23d8a86ab7a6fcd4c8d1d61bc13afecea4b4bf11d678e45f80dc",
+        "git_blob": "ca897890985bbbb154a37cfb6438de5130dfab9f"
+      }
+    ],
+    "installed_path": "D:\\Google Drive\\Documents\\Codex-Projects\\.codex\\skills\\z-files-folders",
+    "package_sha256": "1ace23d37a5b2fc6d32847ff9d81e84febc902c214414046b6de0abcf632b028"
+  },
+  {
+    "name": "z-small-bite-task",
+    "commit": "3d49d98aa3a5e35902be382e43dd74c5748342f7",
+    "files": [
+      {
+        "path": "agents/openai.yaml",
+        "sha256": "8a91415ecdc8ebb7e57f9cd636473623885ff0e39789e7ec2a09176e81711135",
+        "git_blob": "7147f19e027516038e58071927507e456eaccba6"
+      },
+      {
+        "path": "scripts/build_package.sh",
+        "sha256": "80a57db19faefa8368cfdf624039a19618f8fd9241a5183f14651e7bb33757d9",
+        "git_blob": "4a92cf2276e066d5a31ceb062859f118edc8880a"
+      },
+      {
+        "path": "scripts/test_default_package_build.sh",
+        "sha256": "9c71e3572f773754656534d9bb0b33f79a2d09e67cfd66a7efde34e12e129f65",
+        "git_blob": "95f541f9f2cf6e6c5743c3e4e904a22cde48cdfa"
+      },
+      {
+        "path": "scripts/validate_skill.py",
+        "sha256": "20e8ecccc5bcb3a341879d734aa7e3c5c646a94f46e3eed7494cb3d9b4ace872",
+        "git_blob": "4444b4e4114bcc4f5b2a12ab21146587c23360b1"
+      },
+      {
+        "path": "SKILL.md",
+        "sha256": "2d5a949d4f8ff6de5f44ec307291ecb898a3abc24c10ad70362d8e17eccb9ede",
+        "git_blob": "bb4014663d184355db8b5085b2ca7ef75da5e0fb"
+      }
+    ],
+    "installed_path": "D:\\Google Drive\\Documents\\Codex-Projects\\.codex\\skills\\z-small-bite-task",
+    "package_sha256": "caaf0754b05e807e363a5b651ef1c0df82f3372f0357b38a735fc517ecb495f4"
+  },
+  {
+    "name": "z-biz-plan",
+    "commit": "09e84a6434fc4f865eb48d6593d8e448148feebd",
+    "files": [
+      {
+        "path": "agents/openai.yaml",
+        "sha256": "9ebdd7efad7c8385e67277721062247f066e038eac6a70511eb833a7d4368e79",
+        "git_blob": "259c64b066f75a436b9344d136afd2c0cf267dab"
+      },
+      {
+        "path": "SKILL.md",
+        "sha256": "faee1aa8e657b820707603916dd3ed8275e52b60f9f83e94d0c2adac5a94dbf7",
+        "git_blob": "722d9bb02ed855bb452d78c7381193cf36d5061a"
+      }
+    ],
+    "installed_path": "D:\\Google Drive\\Documents\\Codex-Projects\\.codex\\skills\\z-biz-plan",
+    "package_sha256": "5be8cb191933c7ccc729d9e7abe002bf5279d50c764c012aa7098074156f72f1"
+  },
+  {
+    "name": "z-creative-asset-critique",
+    "commit": "3474a1a8d63cdc40d2496555ce717349803b2f6b",
+    "files": [
+      {
+        "path": "agents/openai.yaml",
+        "sha256": "d0cc33c21cd1c375ed2e4cfc19a28a1cb84369953d58eab30d160bdeedcd4dd1",
+        "git_blob": "219cfc7f70cb59d295bf74199faac924bbd7716a"
+      },
+      {
+        "path": "references/asset-checklists.md",
+        "sha256": "76b1e36d3f88c75cff7806cd4cd63c4740abbee2249467d7011cb37fc6f8d3de",
+        "git_blob": "9e59acd2b87e30e7d65250c765d22b5dc3684ad4"
+      },
+      {
+        "path": "references/channel-and-production-notes.md",
+        "sha256": "b6bb6f6bbac542b6634377380922c2395717b85be2ac544de31a14ad126b83f7",
+        "git_blob": "a321a1bb61911ac901faf0b9c69e53cdc1997de0"
+      },
+      {
+        "path": "references/response-patterns.md",
+        "sha256": "9aad06a5d2a86e8a3eb9a02109da8ed6db75670ed4519412303afaecc886c61d",
+        "git_blob": "db4d549a007f8838f322e85f62c742b28cbb5893"
+      },
+      {
+        "path": "SKILL.md",
+        "sha256": "0465a25bce3413c28c66e58849377134f1bae7a2e2dc08af93b7519affe3e2fd",
+        "git_blob": "bda1959412fe14458ec094eaeb20a91be93837e1"
+      }
+    ],
+    "installed_path": "D:\\Google Drive\\Documents\\Codex-Projects\\.codex\\skills\\z-creative-asset-critique",
+    "package_sha256": "310b25c6284cab6cefa4db6f1d69854e3861d7467c57b84a04bcad7239463ecd"
+  },
+  {
+    "name": "z-video-analysis",
+    "commit": "81462e755657fde64d8d302fbf01191b394922a5",
+    "files": [
+      {
+        "path": "agents/openai.yaml",
+        "sha256": "b9a5e7c73ed9b12ca80541c715974871bab80cf78db21acdfdaf54c9ce2a9755",
+        "git_blob": "159fedb058f7c7105302cc60273039e22c488b5c"
+      },
+      {
+        "path": "references/analysis-patterns.md",
+        "sha256": "15f93509a52759a42bde7ede9c71d19009c2420fbe75e18528e56ddadece845d",
+        "git_blob": "30e171bbe380132856f6d5b9fcded59ede8227e4"
+      },
+      {
+        "path": "references/chatgpt-codex.md",
+        "sha256": "d1e44345306bc4e84d676f0b59e92b4848aa726043bde72123ea7887d98114ec",
+        "git_blob": "bf971a6b139c18fa620c88f2c18bb6fdb3f7c75f"
+      },
+      {
+        "path": "references/companion-handoffs.md",
+        "sha256": "20a1c2d70c88055705a0186868f732d830e9f691ca099cc7bfaadcd96ed2db30",
+        "git_blob": "fc804f818b61d02b54501e60f829acfa74a0f776"
+      },
+      {
+        "path": "references/hermes.md",
+        "sha256": "115758eb5ff926bc7352ffd52e513908fb4007c03e20dac38f86a694d959d7ff",
+        "git_blob": "feb758e4794c14ce0a400bb1f7ff2efecbd820eb"
+      },
+      {
+        "path": "references/openclaw.md",
+        "sha256": "8b085ccba3c41adb93d27ce7a73b37720bce41b49eed9bbd53313528ef4feec3",
+        "git_blob": "c9306b37e333c8e2e93fce5e85eaf471b774a38a"
+      },
+      {
+        "path": "references/source-routing.md",
+        "sha256": "b29836e92374b5865026230f3992a0ef3daf927e68aaafd9b70cd63b13940382",
+        "git_blob": "df3b720c47d88a7d33552ce212904cf2a1d35155"
+      },
+      {
+        "path": "references/visual-inspection.md",
+        "sha256": "c64655b09e8c284ffbf8e9913205f47e9bf86aa3893e86a65533845206506a54",
+        "git_blob": "5d75b2a3d312074980a6a838b27a610b39f1c46c"
+      },
+      {
+        "path": "references/website-interaction.md",
+        "sha256": "1a46220440694b2d28d352bc364fcf3c9b2979360dbeab15751c31268b1cc925",
+        "git_blob": "440f8b9b8f1fe95589d954258e2e2cd8816e363b"
+      },
+      {
+        "path": "SKILL.md",
+        "sha256": "681bc7b1988fadf0923e615384203497d174e7c69317bb97b6e1ad38665b97c4",
+        "git_blob": "6a84f5ca942061615f1484e47de81742981ecb6b"
+      }
+    ],
+    "installed_path": "D:\\Google Drive\\Documents\\Codex-Projects\\.codex\\skills\\z-video-analysis",
+    "package_sha256": "c729c7d2710913c60b5b67dba604a18fc29d2fc2c89279ccd0514e6ab3432f83"
+  },
+  {
+    "name": "z-video-critique",
+    "commit": "cb2666e066e9f3ea97476c800921042391be800c",
+    "files": [
+      {
+        "path": "agents/openai.yaml",
+        "sha256": "753e95424631d90e5893e9f71db11d5b7c792192cd36fe4019ac1435c68beeec",
+        "git_blob": "a8da87111935178fe6b149f215bdc321839e8d32"
+      },
+      {
+        "path": "references/channel-and-platform-notes.md",
+        "sha256": "9a666d5891bf0b97a8bb404b5cdbbd525b35cea263bea42ce046db1b234dfd1c",
+        "git_blob": "cf583dbb2b0fbacbef5e628ba806f1e9fe3827d9"
+      },
+      {
+        "path": "references/production-handoff.md",
+        "sha256": "87d15cc4e747d5ec2f1e5252f4912974fd8057047c25d635a09dc97fd098da4e",
+        "git_blob": "7de940933ff4fbd439b81cc8c6e32a0f81020a1c"
+      },
+      {
+        "path": "references/response-patterns.md",
+        "sha256": "560ed32eabf552c78b62ff08a8031e29e3e70137557b28ca81fb8eaa4920bfa5",
+        "git_blob": "ce1abfe2b6d2afbb4d1b84c70e1462543cda8638"
+      },
+      {
+        "path": "references/video-checklists.md",
+        "sha256": "35b8bf61da600cbc5cb767f68ebcdeb78c4dd16882d0785ecca16f502c52cfd6",
+        "git_blob": "79471f8ea19428991c3a61f60f19fc88a1dd721d"
+      },
+      {
+        "path": "SKILL.md",
+        "sha256": "df9485f784eba9b49f15520922941613f712bebb7189ed967857e7d0be697a46",
+        "git_blob": "91f0facccdcbfd9aa2c744c9414375ef405f7951"
+      }
+    ],
+    "installed_path": "D:\\Google Drive\\Documents\\Codex-Projects\\.codex\\skills\\z-video-critique",
+    "package_sha256": "91a1f219112238ce3e579ea1c25a982b81dd5a7c7e332fdc86957746e9593ee9"
+  },
+  {
+    "name": "z-website-analysis",
+    "commit": "842b8e90a8285e743320b9e497c0165ae417422b",
+    "files": [
+      {
+        "path": "agents/openai.yaml",
+        "sha256": "981c1ff143c10d132a9d5ebcf5f93e35a0ff227ad9a17a879e343260c53fad31",
+        "git_blob": "7e224756b78cab343a19587808c37c90f378cbe0"
+      },
+      {
+        "path": "assets/pattern-record.md",
+        "sha256": "31c1f91f464460619fed35609d14f748404df2894741699e41f1cae519e99290",
+        "git_blob": "6d54d5238eb475b842df4f71ecb9156e20efd619"
+      },
+      {
+        "path": "references/runtime.md",
+        "sha256": "2f45ce897dbb81eb97327b55e5042f09f97dfbddb33b0d0c12d6ae55e4c3442c",
+        "git_blob": "e45824064d3a7686cdac4ab9986c9b2768860e86"
+      },
+      {
+        "path": "references/website-contract.md",
+        "sha256": "b0aeaa3747721363b44fc7e638df2578b1260776e2f443b61546eef9c38d22de",
+        "git_blob": "1a21408b6c311412d47636c3f74aca3c77cac72c"
+      },
+      {
+        "path": "references/website-criteria.md",
+        "sha256": "60d3c4ab8204415da19189d81d158fa860f80b89d93301e34421a189ef68485d",
+        "git_blob": "81e61a06b9e5b10efe566fe5229a0b28c90cfe65"
+      },
+      {
+        "path": "SKILL.md",
+        "sha256": "3ae9596d6d72f6f210b2e6a4178253e1683e69ba8fcaa2fa61bac9c22ab67160",
+        "git_blob": "49ff9746d3b371f9b0d43cbcefc73738dfae1e58"
+      }
+    ],
+    "installed_path": "D:\\Google Drive\\Documents\\Codex-Projects\\.codex\\skills\\z-website-analysis",
+    "package_sha256": "52d6aa9103017d67be4436438850c25d0245d14995e8a76678c51f7c1dd2cdf4"
+  },
+  {
+    "name": "z-website-critique",
+    "commit": "59b9022e87423c1ed46d560bc719f58af1833f0a",
+    "files": [
+      {
+        "path": "agents/openai.yaml",
+        "sha256": "25c096a26c14624fb3cc0e7564b9652fd28043ee0c2f4acd1a34afade4e310fc",
+        "git_blob": "fa07c0737bbee378eeb8c096a8f34484eac89ef9"
+      },
+      {
+        "path": "assets/finding-record.md",
+        "sha256": "3458856bf1964160a30670739263308393ac716fb2000da6875e3d39e8a285ff",
+        "git_blob": "a6ba46a13934fef49414a5efe95726ea3ef7f0ed"
+      },
+      {
+        "path": "references/runtime.md",
+        "sha256": "2f45ce897dbb81eb97327b55e5042f09f97dfbddb33b0d0c12d6ae55e4c3442c",
+        "git_blob": "e45824064d3a7686cdac4ab9986c9b2768860e86"
+      },
+      {
+        "path": "references/website-contract.md",
+        "sha256": "b0aeaa3747721363b44fc7e638df2578b1260776e2f443b61546eef9c38d22de",
+        "git_blob": "1a21408b6c311412d47636c3f74aca3c77cac72c"
+      },
+      {
+        "path": "references/website-criteria.md",
+        "sha256": "60d3c4ab8204415da19189d81d158fa860f80b89d93301e34421a189ef68485d",
+        "git_blob": "81e61a06b9e5b10efe566fe5229a0b28c90cfe65"
+      },
+      {
+        "path": "SKILL.md",
+        "sha256": "419b7445a0cfbe3594dc8d27d792ac2fdecc53495f48aa8ef3ea2bdc5c4cf85e",
+        "git_blob": "fd679043aef5ec970c6c20530d5bfaeb243e21dd"
+      }
+    ],
+    "installed_path": "D:\\Google Drive\\Documents\\Codex-Projects\\.codex\\skills\\z-website-critique",
+    "package_sha256": "039f7e41578cf5942f0e5f3aa06f677a6ad8ade9bd8dcf62bd201c1d1fe271f5"
+  },
+  {
+    "name": "z-asana-agent-control",
+    "commit": "ce69ddd3b9f40e07df9839b630a218d236c5029b",
+    "files": [
+      {
+        "path": "agents/openai.yaml",
+        "sha256": "6b82e0533cd590e85663350ea938eba13018d3738622e0ed8bf1c3a13cf0a3ec",
+        "git_blob": "4a97d3d9748e8f6870795356e36e7ef33bc8c09c"
+      },
+      {
+        "path": "references/chatgpt-codex.md",
+        "sha256": "65305e485137035f1020e0b4c99202b446f1bc14e886a7bb9704df93c9ce14a5",
+        "git_blob": "71f9948e7bee9948c24f2e112812be2ed90d0ca2"
+      },
+      {
+        "path": "references/task-memory.md",
+        "sha256": "20e181c82a903ad768900fcd93bdc64cce025a9ec008ab8e210846d0046d878e",
+        "git_blob": "c0c31165b0cdb29fbdce18783ff859daa55145d3"
+      },
+      {
+        "path": "SKILL.md",
+        "sha256": "e5a4c8781f67ce1fbdedca59580d9aa87b957fdb5b8fd833e8932bd00fe7e311",
+        "git_blob": "e4c685fd929aa08067d2c12ad4d8d3b5fe23d37d"
+      }
+    ],
+    "installed_path": "D:\\Google Drive\\Documents\\Codex-Projects\\.codex\\skills\\z-asana-agent-control",
+    "package_sha256": "95df7efda7bddd5976251b6ea67998c08ba6ef741b7e396fa190073a816ae848"
+  },
+  {
+    "name": "z-advanced-asana-control",
+    "commit": "e387c77a316ac22cf40de575c3e87c94e25cb2fb",
+    "files": [
+      {
+        "path": "agents/openai.yaml",
+        "sha256": "5ae7c134f2475aafa3fa7a7da1a8b7a1663272f960c1dcad85d2f9c050684ace",
+        "git_blob": "90ad5d5d278e51892e5ff55a25f25535ef0bd7f6"
+      },
+      {
+        "path": "scripts/build_package.sh",
+        "sha256": "23712c0fbd8611617f5a438125e9f1039f16d94fa1b60908013e95916ed3fad1",
+        "git_blob": "8cfef497abf1de35d96af4211222acb7cee91afc"
+      },
+      {
+        "path": "SKILL.md",
+        "sha256": "0e1ddcc1bbefb9a817b22d1cd4b52799baf0d1af55d067cd49cdd7e65bd7ad59",
+        "git_blob": "744039523430acc0ecfc2146c3535ec98d92f48b"
+      }
+    ],
+    "installed_path": "D:\\Google Drive\\Documents\\Codex-Projects\\.codex\\skills\\z-advanced-asana-control",
+    "package_sha256": "7d6f3b9d1ee82ddfe63b7800ae68bdc8de3d8dc3a1a7623769bb8dd8421cd37b"
+  },
+  {
+    "name": "z-asana-procedures",
+    "commit": "cef85066f9899100a39a919db14276b8c46ba284",
+    "files": [
+      {
+        "path": "agents/openai.yaml",
+        "sha256": "28d1dce17ce5c1c149356cab46c6bcab05e57450e8d9a16922b133dbd6b1bf8e",
+        "git_blob": "f8e92b4db455bea0889a02c37d3d6b3c2fd4e757"
+      },
+      {
+        "path": "assets/briefs.md",
+        "sha256": "c637fdc8693bd41b93e1d94a961cf9fd8169c41fc540853bd23efb5c0aea4fff",
+        "git_blob": "245894390b72bc3d1b6bdec9826f0c186eb93a97"
+      },
+      {
+        "path": "references/continuation.md",
+        "sha256": "db05da3f67e34d45d97c1704aea719ede633cb8b19a698d5ec6d1581d2500945",
+        "git_blob": "eaf37016e4f808d55503be27d4c4cb34560fc407"
+      },
+      {
+        "path": "references/delivery.md",
+        "sha256": "f017849f395b879b79a004a52b8a1ea0104d7bc40eb4d8ccf5666aa8457fbff7",
+        "git_blob": "310a1408c5c602e6df7f9a70b8386f31d370f204"
+      },
+      {
+        "path": "references/openclaw.md",
+        "sha256": "5c5847e0ebd95a4253ec1ab6498e158fe3bb5da5753cff9ad074c401e7330403",
+        "git_blob": "12420a3845ec53902c3da02c701aec8872432625"
+      },
+      {
+        "path": "references/projects.md",
+        "sha256": "105fa89a7003b841b667933260d1e5904d68dfec680225b9c3dc77061fb63de9",
+        "git_blob": "097fd15373def72376f8af4155ce8fc37c44628f"
+      },
+      {
+        "path": "references/sources.md",
+        "sha256": "0aa0305a9860ff2751ee42c62f81c9c865a99e0f5e2fb96b8ac3b623722c53fb",
+        "git_blob": "57224cb0dc32dcba43f53f9704629ed96dad8d71"
+      },
+      {
+        "path": "references/tasks.md",
+        "sha256": "fedd59ed85b68efad04244ef622a4448c10dbce8ed8b99cd3be586f614d6d773",
+        "git_blob": "d74d6707340dc6001895c7d15ed1249b59c63984"
+      },
+      {
+        "path": "references/workflow.md",
+        "sha256": "a93dfc3223b01bf1ed7e54005e547042cdccf6ab7692a556a42d52d89d0dcb6a",
+        "git_blob": "298ca8d704813ec9804b56ba7b3d82a538b38216"
+      },
+      {
+        "path": "SKILL.md",
+        "sha256": "ffe437e6756ed2ef59f0605b37ee52b16b01b0d89fd959719df369cc7560c8df",
+        "git_blob": "7efdc8d259b4a9f6ab218de8a92886e99e317984"
+      }
+    ],
+    "installed_path": "D:\\Google Drive\\Documents\\Codex-Projects\\.codex\\skills\\z-asana-procedures",
+    "package_sha256": "a8f867700aa409cd64ebdb9fe3820db2d805d02137db3321cccd71946e09ab82"
+  }
+]
