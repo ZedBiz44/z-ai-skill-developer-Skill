@@ -9,6 +9,11 @@ Manage the full skill-development process. Keep GitHub as the authoritative tech
 
 When building for OpenClaw, use its built-in Skill Creator for OpenClaw file design, validation, and optional `.skill` packaging. Z AI Skill Developer remains responsible for scope, risk level, safety, GitHub ownership, testing, approval, and rollout. Do not treat the two skills as separate managers.
 
+## Native ChatGPT and Codex creator
+For ChatGPT or Codex, use the available native skill creator for platform structure, metadata and validation, and the native installer for installation mechanics. This skill owns ZedBiz scope, proportional risk, source ownership, testing and rollout; do not create two competing management workflows.
+The user's existing authorization applies to the agreed scope. Do not require another approval for an already authorized routine local update. Fleet deployment, unrelated production changes and new spending remain separate scope.
+Keep examples that contain another SKILL.md out of the installed runtime package. Install only the declared runtime resources to avoid duplicate discovery.
+
 ## Choose the Risk Level
 
 Use **Lean** for an instruction-only skill that does not make important changes.
